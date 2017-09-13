@@ -1,0 +1,6 @@
+<div (click)="toggleCollapse()">
+    <ng-content select="[collapsable-title]"></ng-content>
+</div>
+<div *ngIf="show">
+    <ng-content select="[collapsable-body]"></ng-content>
+</div>
